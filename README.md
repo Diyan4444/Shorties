@@ -1,28 +1,53 @@
 # Shorties ⚡
 
-A curated collection of lightweight, standalone C++ and Python mini-projects, CLI tools, and practice implementations.
+### I thought to make a small repo related to some basic programs in cpp just for fun, because WHY NOT!
+
+A collection of lightweight C++ programs, small console utilities, and logic drills.
 
 ---
 
-## 📂 Included Projects
+## 📁 Repository Structure
 
-| Project | Language | Description | Key Concepts |
-| :--- | :--- | :--- | :--- |
-| **Grade Manager** | C++ | Student marks entry & average grade evaluation | Structs, vectors, menu-driven CLI |
-| **Banking System** | C++ | Account creation, transactions, & balance tracking | State tracking, validation, I/O streams |
-| *Utilities & Scripts* | C++ / Py | Focused algorithms, DSA drills, & logic prototypes | Data structures, algorithms |
+```text
+Shorties/
+├── cpp/       # Source code files (.cpp)
+└── exe/       # Compiled binary executables (.exe)
+```
+
+### 📂 cpp/ — Source Code
+Contains the source code files for the C++ programs.
+
+- **grade.cpp**: Student management console utility to add/remove student records, add marks for 5 subjects, and compute final grades.
+
+### 📂 exe/ — Executables
+The `exe` folder signifies the executable format for the compiled C++ code. It contains the generated Windows binaries so you can run the programs directly without needing to recompile them each time.
 
 ---
 
-## 🚀 Quick Start
+## 🚀 How to Run
 
-### Prerequisites
-- C++17 compiler (`g++`, `clang++`, or MSVC)
-- Git
+### 1. Run Pre-compiled Binaries (Windows)
+Navigate to the `exe/` folder and execute the binary directly:
 
-### Build & Run (C++)
+```powershell
+cd exe
+.\grade.exe
+```
 
-1. **Clone the repository:**
+### 2. Compile and Run from Source
+If you want to compile the code yourself using a C++ compiler like `g++`:
+
+1. Move to the source folder:
    ```bash
-   git clone [https://github.com/Diyan4444/Shorties.git](https://github.com/Diyan4444/Shorties.git)
-   cd Shorties
+   cd cpp
+   ```
+
+2. Compile the file (outputting into the `exe/` directory):
+   ```bash
+   g++ grade.cpp -o name.exe
+   ```
+
+3. Run the compiled program:
+   ```powershell
+   .\name.exe
+   ```
